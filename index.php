@@ -1,8 +1,17 @@
 <style>
-    
+.cs {
+    font-family: "Arial";
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 50px;
+}
+body {
+    background-color: grey;
+}
 </style>
 
-
+<div class="cs">
 <?php
 if(isset($_REQUEST['action']) && $_REQUEST['action'] == "login") {
 
@@ -78,3 +87,4 @@ if (isset($_REQUEST['action']) && $_REQUEST['action'] == "register") {
     <input type="hidden" name="action" value="register">
     <input type="submit" value="Zarejestruj">
 </form>
+</div>
